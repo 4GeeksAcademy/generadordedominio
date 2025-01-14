@@ -1,19 +1,11 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+let pronoun = ["the", "our"];
+let adj = ["great", "big"];
+let noun = ["jogger", "racoon"];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-window.onload = function() {
-  let pronoun = ["the", "our"];
-  let adj = ["great", "big"];
-  let noun = ["jogger", "racoon"];
-
-  Math.floor(Math.random() * pronoun.length);
-  Math.floor(Math.random() * adj.length);
-  Math.floor(Math.random() * noun.length);
-
-  document.querySelector("dominio").innerHTML =
-    pronoun[rdm1] + adj[rmd2] + noun[rmd3];
-};
+for (let A = 0; A < pronoun.length; A++) {
+  for (let B = 0; B < adj.length; B++) {
+    for (let C = 0; C < noun.length; C++) {
+      console.log(pronoun[A] + adj[B] + noun[C] + ".com");
+    }
+  }
+}
